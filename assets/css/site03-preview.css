@@ -1,0 +1,665 @@
+
+/* ========================================================
+   SITE-03 PREVIEW
+   MIDNIGHT NAVY + CORAL + IVORY
+   ======================================================== */
+
+:root{
+  --s3-navy:#101c35;
+  --s3-navy2:#172746;
+  --s3-coral:#ef705f;
+  --s3-coral2:#ff947f;
+  --s3-ivory:#f7f2e9;
+  --s3-paper:#fffdf9;
+  --s3-ink:#152238;
+  --s3-muted:#69758a;
+  --s3-line:#d9d4cb;
+}
+
+
+/* ========================================================
+   COMMON
+   ======================================================== */
+
+body[class*="site03-preview-"]{
+  background:var(--s3-ivory) !important;
+  color:var(--s3-ink) !important;
+}
+
+body[class*="site03-preview-"] .topbar{
+  background:var(--s3-navy) !important;
+  color:#fff !important;
+}
+
+body[class*="site03-preview-"] .ry-nav{
+  background:#fffdf9 !important;
+  border-bottom:1px solid var(--s3-line) !important;
+  box-shadow:none !important;
+}
+
+body[class*="site03-preview-"] .ry-brand{
+  color:var(--s3-navy) !important;
+  -webkit-text-fill-color:var(--s3-navy) !important;
+}
+
+body[class*="site03-preview-"] .ry-menu a{
+  color:#33415d !important;
+  -webkit-text-fill-color:#33415d !important;
+}
+
+
+/* ========================================================
+   MAIN
+   wide editorial banner + horizontal companies
+   ======================================================== */
+
+.site03-preview-main .hero{
+  width:min(1320px,calc(100% - 30px)) !important;
+  margin:24px auto 0 !important;
+  border-radius:0 !important;
+  overflow:visible !important;
+  background:transparent !important;
+  box-shadow:none !important;
+}
+
+.site03-preview-main .hero-main{
+  position:relative !important;
+  min-height:570px !important;
+  display:block !important;
+  overflow:hidden !important;
+  background:var(--s3-navy) !important;
+  border-radius:0 0 80px 0 !important;
+}
+
+.site03-preview-main .hero-visual{
+  position:absolute !important;
+  inset:0 0 0 34% !important;
+  width:auto !important;
+  height:100% !important;
+  z-index:1 !important;
+}
+
+.site03-preview-main .metro-hero-photo{
+  width:100% !important;
+  height:100% !important;
+  object-fit:cover !important;
+  border-radius:0 !important;
+}
+
+.site03-preview-main .hero-visual::after{
+  content:"" !important;
+  position:absolute !important;
+  inset:0 !important;
+  background:linear-gradient(
+    90deg,
+    rgba(16,28,53,.94),
+    rgba(16,28,53,.38) 48%,
+    rgba(16,28,53,.05)
+  ) !important;
+}
+
+.site03-preview-main .hero-copy{
+  position:relative !important;
+  z-index:3 !important;
+  width:49% !important;
+  padding:84px 58px !important;
+  background:transparent !important;
+}
+
+.site03-preview-main .hero-copy h1{
+  font-size:clamp(46px,5.8vw,78px) !important;
+  line-height:1.02 !important;
+  letter-spacing:-.06em !important;
+  color:#fff !important;
+  -webkit-text-fill-color:#fff !important;
+}
+
+.site03-preview-main .hero-copy p,
+.site03-preview-main .hero-copy .site-copy-v4{
+  color:#dce2ef !important;
+  -webkit-text-fill-color:#dce2ef !important;
+}
+
+.site03-preview-main .eyebrow{
+  color:var(--s3-coral2) !important;
+  -webkit-text-fill-color:var(--s3-coral2) !important;
+}
+
+/* region strip */
+.site03-preview-main .region-grid{
+  display:grid !important;
+  grid-template-columns:repeat(3,1fr) !important;
+  gap:0 !important;
+  border:1px solid var(--s3-line) !important;
+}
+
+.site03-preview-main .region-card{
+  min-height:210px !important;
+  padding:32px !important;
+  border:0 !important;
+  border-right:1px solid var(--s3-line) !important;
+  border-radius:0 !important;
+  background:#fffdf9 !important;
+  box-shadow:none !important;
+}
+
+.site03-preview-main .region-card:nth-child(2){
+  background:#f4e8e4 !important;
+}
+
+.site03-preview-main .region-card:last-child{
+  border-right:0 !important;
+}
+
+/* main companies horizontal strips */
+.site03-preview-main .company-grid{
+  display:flex !important;
+  flex-direction:column !important;
+  gap:12px !important;
+}
+
+.site03-preview-main .company-card{
+  min-height:118px !important;
+  padding:22px 26px !important;
+  display:grid !important;
+  grid-template-columns:62px 1.2fr 1fr 260px !important;
+  align-items:center !important;
+  gap:18px !important;
+  border:1px solid #ddd7ce !important;
+  border-left:6px solid var(--s3-coral) !important;
+  border-radius:0 !important;
+  background:#fff !important;
+  box-shadow:none !important;
+}
+
+.site03-preview-main .ry-rank{
+  width:46px !important;
+  height:46px !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  border-radius:50% !important;
+  background:var(--s3-navy) !important;
+  color:#fff !important;
+  -webkit-text-fill-color:#fff !important;
+}
+
+.site03-preview-main .company-name{
+  font-size:24px !important;
+  color:var(--s3-navy) !important;
+  -webkit-text-fill-color:var(--s3-navy) !important;
+}
+
+
+/* ========================================================
+   SPECIAL
+   dark gallery + 3/2 cards
+   ======================================================== */
+
+.site03-preview-special{
+  background:#0c1629 !important;
+}
+
+.site03-preview-special .topbar,
+.site03-preview-special .ry-nav{
+  background:#0c1629 !important;
+  border-color:#263550 !important;
+}
+
+.site03-preview-special .ry-brand,
+.site03-preview-special .ry-menu a{
+  color:#fff !important;
+  -webkit-text-fill-color:#fff !important;
+}
+
+.site03-preview-special .hero{
+  width:min(1280px,calc(100% - 30px)) !important;
+  margin:20px auto !important;
+  background:transparent !important;
+  border:0 !important;
+  box-shadow:none !important;
+}
+
+.site03-preview-special .hero-main{
+  min-height:600px !important;
+  display:grid !important;
+  grid-template-columns:58% 42% !important;
+  overflow:hidden !important;
+  background:#152440 !important;
+  border-radius:60px 0 0 0 !important;
+}
+
+.site03-preview-special .hero-visual{
+  grid-column:1 !important;
+  grid-row:1 !important;
+  min-height:600px !important;
+}
+
+.site03-preview-special .metro-hero-photo{
+  width:100% !important;
+  height:100% !important;
+  object-fit:cover !important;
+  border-radius:0 !important;
+}
+
+.site03-preview-special .hero-copy{
+  grid-column:2 !important;
+  grid-row:1 !important;
+  padding:64px 44px !important;
+  display:flex !important;
+  flex-direction:column !important;
+  justify-content:center !important;
+  background:var(--s3-coral) !important;
+}
+
+.site03-preview-special .hero-copy h1,
+.site03-preview-special .hero-copy p,
+.site03-preview-special .hero-copy .site-copy-v4,
+.site03-preview-special .eyebrow{
+  color:#fff !important;
+  -webkit-text-fill-color:#fff !important;
+}
+
+.site03-preview-special .company-grid{
+  display:grid !important;
+  grid-template-columns:repeat(6,1fr) !important;
+  gap:14px !important;
+  background:transparent !important;
+}
+
+.site03-preview-special .company-card{
+  grid-column:span 2 !important;
+  min-height:250px !important;
+  padding:28px !important;
+  display:flex !important;
+  flex-direction:column !important;
+  justify-content:space-between !important;
+  background:#172746 !important;
+  border:1px solid #33415f !important;
+  border-radius:26px 0 26px 0 !important;
+  box-shadow:none !important;
+}
+
+.site03-preview-special .company-card:nth-child(4){
+  grid-column:2 / span 2 !important;
+}
+
+.site03-preview-special .company-card:nth-child(5){
+  grid-column:4 / span 2 !important;
+}
+
+.site03-preview-special .company-name{
+  color:#fff !important;
+  -webkit-text-fill-color:#fff !important;
+}
+
+.site03-preview-special .company-sub{
+  color:#aeb8cc !important;
+  -webkit-text-fill-color:#aeb8cc !important;
+}
+
+.site03-preview-special .ry-rank{
+  background:var(--s3-coral) !important;
+  color:#fff !important;
+  -webkit-text-fill-color:#fff !important;
+}
+
+.site03-preview-special .company-actions .call{
+  background:var(--s3-coral) !important;
+  color:#fff !important;
+}
+
+.site03-preview-special .company-actions .sms{
+  background:#fff !important;
+  color:var(--s3-navy) !important;
+}
+
+
+/* ========================================================
+   GENERAL REGION
+   left guide / right company list feel
+   ======================================================== */
+
+.site03-preview-region-general .hero-main{
+  display:grid !important;
+  grid-template-columns:55% 45% !important;
+  min-height:470px !important;
+  background:#fff !important;
+  border:1px solid var(--s3-line) !important;
+  border-radius:0 !important;
+  overflow:hidden !important;
+}
+
+.site03-preview-region-general .hero-copy{
+  padding:56px !important;
+  display:flex !important;
+  flex-direction:column !important;
+  justify-content:center !important;
+  background:#fff !important;
+}
+
+.site03-preview-region-general .hero-copy h1{
+  color:var(--s3-navy) !important;
+  -webkit-text-fill-color:var(--s3-navy) !important;
+}
+
+.site03-preview-region-general .hero-visual{
+  min-height:470px !important;
+}
+
+.site03-preview-region-general .metro-hero-photo{
+  width:100% !important;
+  height:100% !important;
+  object-fit:cover !important;
+  border-radius:0 !important;
+}
+
+.site03-preview-region-general .region-grid{
+  display:grid !important;
+  grid-template-columns:1fr !important;
+  max-width:340px !important;
+  float:left !important;
+  width:30% !important;
+  gap:10px !important;
+}
+
+.site03-preview-region-general .region-card{
+  min-height:120px !important;
+  padding:22px !important;
+  border-radius:0 !important;
+  background:#f4e6e1 !important;
+  border:0 !important;
+  border-left:5px solid var(--s3-coral) !important;
+  box-shadow:none !important;
+}
+
+.site03-preview-region-general .company-grid{
+  width:66% !important;
+  margin-left:34% !important;
+  display:flex !important;
+  flex-direction:column !important;
+  gap:12px !important;
+}
+
+.site03-preview-region-general .company-card{
+  min-height:150px !important;
+  padding:24px !important;
+  border:1px solid var(--s3-line) !important;
+  border-radius:0 32px 0 0 !important;
+  background:#fff !important;
+  box-shadow:none !important;
+}
+
+.site03-preview-region-general .company-name{
+  color:var(--s3-navy) !important;
+  -webkit-text-fill-color:var(--s3-navy) !important;
+}
+
+
+/* ========================================================
+   SPECIAL REGION
+   dark compact layout
+   ======================================================== */
+
+.site03-preview-region-special{
+  background:#0d172a !important;
+}
+
+.site03-preview-region-special .topbar,
+.site03-preview-region-special .ry-nav{
+  background:#0d172a !important;
+  border-color:#2a3854 !important;
+}
+
+.site03-preview-region-special .ry-brand,
+.site03-preview-region-special .ry-menu a{
+  color:#fff !important;
+  -webkit-text-fill-color:#fff !important;
+}
+
+.site03-preview-region-special .hero-main{
+  display:grid !important;
+  grid-template-columns:40% 60% !important;
+  min-height:480px !important;
+  background:#172746 !important;
+  border-radius:0 70px 0 0 !important;
+  overflow:hidden !important;
+}
+
+.site03-preview-region-special .hero-copy{
+  padding:52px 42px !important;
+  background:#172746 !important;
+}
+
+.site03-preview-region-special .hero-copy h1,
+.site03-preview-region-special .hero-copy p,
+.site03-preview-region-special .hero-copy .site-copy-v4{
+  color:#fff !important;
+  -webkit-text-fill-color:#fff !important;
+}
+
+.site03-preview-region-special .hero-visual{
+  min-height:480px !important;
+}
+
+.site03-preview-region-special .metro-hero-photo{
+  width:100% !important;
+  height:100% !important;
+  object-fit:cover !important;
+  border-radius:0 !important;
+}
+
+.site03-preview-region-special .company-grid{
+  display:grid !important;
+  grid-template-columns:1fr 1fr !important;
+  gap:14px !important;
+  background:transparent !important;
+}
+
+.site03-preview-region-special .company-card{
+  min-height:210px !important;
+  padding:26px !important;
+  background:#172746 !important;
+  border:1px solid #344563 !important;
+  border-radius:28px 0 28px 0 !important;
+  box-shadow:none !important;
+}
+
+.site03-preview-region-special .company-card:nth-child(5){
+  grid-column:1 / -1 !important;
+}
+
+.site03-preview-region-special .company-name{
+  color:#fff !important;
+  -webkit-text-fill-color:#fff !important;
+}
+
+.site03-preview-region-special .company-sub{
+  color:#aeb8c8 !important;
+  -webkit-text-fill-color:#aeb8c8 !important;
+}
+
+.site03-preview-region-special .company-actions .call{
+  background:var(--s3-coral) !important;
+  color:#fff !important;
+}
+
+.site03-preview-region-special .company-actions .sms{
+  background:#fff !important;
+  color:var(--s3-navy) !important;
+}
+
+
+/* region guide / map readability */
+.site03-preview-region-special .strip,
+.site03-preview-region-special .region-links,
+.site03-preview-region-special .map-section{
+  background:#f5f1e9 !important;
+  color:var(--s3-navy) !important;
+}
+
+.site03-preview-region-special .strip *,
+.site03-preview-region-special .region-links *,
+.site03-preview-region-special .map-section *{
+  color:var(--s3-navy) !important;
+  -webkit-text-fill-color:var(--s3-navy) !important;
+  opacity:1 !important;
+}
+
+
+/* ========================================================
+   SHOP
+   full hero photo + overlapping information card
+   ======================================================== */
+
+.site03-preview-shop{
+  background:#efeae2 !important;
+}
+
+.site03-preview-shop .top{
+  background:var(--s3-navy) !important;
+  color:#fff !important;
+}
+
+.site03-preview-shop .card{
+  position:relative !important;
+  overflow:visible !important;
+  margin-top:300px !important;
+  padding:42px !important;
+  background:#fff !important;
+  border:0 !important;
+  border-radius:0 42px 0 0 !important;
+  box-shadow:0 16px 45px rgba(20,31,54,.12) !important;
+}
+
+.site03-preview-shop section:has(table.course)::before{
+  content:"" !important;
+  position:absolute !important;
+  left:0 !important;
+  right:0 !important;
+  top:-300px !important;
+  height:270px !important;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(16,28,53,.25),
+      rgba(16,28,53,.02)
+    ),
+    url("/assets/brand/hero.webp") center/cover no-repeat !important;
+  border-radius:42px 0 0 0 !important;
+}
+
+.site03-preview-shop .shop-name{
+  display:inline-block !important;
+  margin-top:-82px !important;
+  padding:18px 26px !important;
+  position:relative !important;
+  z-index:2 !important;
+  background:var(--s3-coral) !important;
+  color:#fff !important;
+  -webkit-text-fill-color:#fff !important;
+  font-size:34px !important;
+  border-radius:0 24px 0 0 !important;
+}
+
+.site03-preview-shop .shop-intro{
+  background:#f5eee9 !important;
+  border-left:5px solid var(--s3-coral) !important;
+  border-radius:0 !important;
+}
+
+.site03-preview-shop table.course{
+  border-collapse:separate !important;
+  border-spacing:0 8px !important;
+}
+
+.site03-preview-shop table.course th{
+  background:var(--s3-navy) !important;
+  color:#fff !important;
+  border:0 !important;
+}
+
+.site03-preview-shop table.course td{
+  background:#f8f4ed !important;
+  border:0 !important;
+}
+
+.site03-preview-shop .actions .call{
+  background:var(--s3-navy) !important;
+  color:#fff !important;
+}
+
+.site03-preview-shop .actions .sms{
+  background:var(--s3-coral) !important;
+  color:#fff !important;
+}
+
+.site03-preview-shop .shop-extra-guide{
+  border-top:6px solid var(--s3-coral) !important;
+  background:#fff !important;
+}
+
+.site03-preview-shop .shop-extra-guide-grid > *{
+  border-radius:0 28px 0 0 !important;
+}
+
+.site03-preview-shop .shop-follow-call{
+  background:var(--s3-navy) !important;
+}
+
+.site03-preview-shop .shop-follow-sms{
+  background:var(--s3-coral) !important;
+}
+
+
+/* ========================================================
+   MOBILE
+   ======================================================== */
+
+@media(max-width:800px){
+
+  .site03-preview-main .hero-main,
+  .site03-preview-special .hero-main,
+  .site03-preview-region-general .hero-main,
+  .site03-preview-region-special .hero-main{
+    grid-template-columns:1fr !important;
+  }
+
+  .site03-preview-main .hero-visual{
+    position:relative !important;
+    inset:auto !important;
+    min-height:300px !important;
+  }
+
+  .site03-preview-main .hero-copy{
+    width:auto !important;
+  }
+
+  .site03-preview-main .region-grid{
+    grid-template-columns:1fr !important;
+  }
+
+  .site03-preview-main .company-card{
+    grid-template-columns:55px 1fr !important;
+  }
+
+  .site03-preview-special .company-grid,
+  .site03-preview-region-special .company-grid{
+    grid-template-columns:1fr !important;
+  }
+
+  .site03-preview-special .company-card,
+  .site03-preview-special .company-card:nth-child(4),
+  .site03-preview-special .company-card:nth-child(5),
+  .site03-preview-region-special .company-card:nth-child(5){
+    grid-column:auto !important;
+  }
+
+  .site03-preview-region-general .region-grid,
+  .site03-preview-region-general .company-grid{
+    float:none !important;
+    width:auto !important;
+    max-width:none !important;
+    margin-left:0 !important;
+  }
+}

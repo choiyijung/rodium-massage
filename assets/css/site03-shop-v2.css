@@ -1,0 +1,217 @@
+
+body.site03-shop-v2{
+  margin:0!important;
+  background:#f4efe6!important;
+  color:#17233a!important;
+  font-family:Arial,"Noto Sans KR",sans-serif!important;
+}
+
+.site03-shop-v2 .top{
+  background:#12213e!important;
+}
+
+.site03-shop-v2 .brand,
+.site03-shop-v2 .breadcrumb{
+  color:#fff!important;
+  -webkit-text-fill-color:#fff!important;
+}
+
+.site03-shop-v2 .wrap{
+  width:min(1040px,calc(100% - 32px))!important;
+  margin:42px auto 90px!important;
+}
+
+.site03-shop-v2 .card{
+  background:#fffdf9!important;
+  border:1px solid #ddd4c6!important;
+  border-radius:0 50px 0 0!important;
+  box-shadow:0 22px 55px rgba(18,33,62,.10)!important;
+  overflow:hidden!important;
+}
+
+.site03-shop-v2 .shop-name{
+  padding:40px 42px 20px!important;
+  margin:0!important;
+  background:#12213e!important;
+  color:#fff!important;
+  -webkit-text-fill-color:#fff!important;
+  font-size:46px!important;
+  font-weight:900!important;
+  word-break:keep-all!important;
+}
+
+.site03-shop-v2 .site-copy-v4{
+  padding:14px 42px!important;
+  background:#ef6f61!important;
+  color:#fff!important;
+  -webkit-text-fill-color:#fff!important;
+}
+
+.site03-shop-v2 .area{
+  color:#ef6f61!important;
+  -webkit-text-fill-color:#ef6f61!important;
+  font-weight:900!important;
+}
+
+.site03-shop-v2 .shop-intro{
+  background:#f6f1e9!important;
+  border-left:5px solid #ef6f61!important;
+  color:#344158!important;
+  -webkit-text-fill-color:#344158!important;
+}
+
+.site03-shop-v2 .course{
+  border-radius:18px!important;
+  overflow:hidden!important;
+}
+
+.site03-shop-v2 .course th{
+  background:#172746!important;
+  color:#fff!important;
+  -webkit-text-fill-color:#fff!important;
+}
+
+.site03-shop-v2 .course td{
+  background:#fff!important;
+  color:#27344b!important;
+  -webkit-text-fill-color:#27344b!important;
+}
+
+.site03-shop-v2 .phone{
+  background:#f3ebe0!important;
+  color:#12213e!important;
+  -webkit-text-fill-color:#12213e!important;
+  font-weight:900!important;
+}
+
+.site03-shop-v2 .actions .call{
+  background:#12213e!important;
+  color:#fff!important;
+  -webkit-text-fill-color:#fff!important;
+}
+
+.site03-shop-v2 .actions .sms{
+  background:#ef6f61!important;
+  color:#fff!important;
+  -webkit-text-fill-color:#fff!important;
+}
+
+.site03-shop-v2 .shop-extra-guide{
+  background:#fffdf9!important;
+  border:1px solid #ddd4c6!important;
+  border-radius:28px 0 28px 0!important;
+}
+
+.site03-shop-v2 .shop-extra-guide h2{
+  color:#12213e!important;
+  -webkit-text-fill-color:#12213e!important;
+}
+
+.site03-shop-v2 .shop-extra-guide h3{
+  color:#ef6f61!important;
+  -webkit-text-fill-color:#ef6f61!important;
+}
+
+.site03-shop-v2 .shop-extra-guide-grid > *{
+  background:#f7f2ea!important;
+  border:1px solid #e2d9cc!important;
+}
+
+.site03-shop-v2 .shop-extra-guide-faq{
+  background:#172746!important;
+}
+
+.site03-shop-v2 .shop-extra-guide-faq,
+.site03-shop-v2 .shop-extra-guide-faq *{
+  color:#fff!important;
+  -webkit-text-fill-color:#fff!important;
+}
+
+.site03-shop-v2 .shop-follow-contact{
+  background:#12213e!important;
+}
+
+.site03-shop-v2 .shop-follow-call{
+  background:#fff!important;
+  color:#12213e!important;
+  -webkit-text-fill-color:#12213e!important;
+}
+
+.site03-shop-v2 .shop-follow-sms{
+  background:#ef6f61!important;
+  color:#fff!important;
+  -webkit-text-fill-color:#fff!important;
+}
+
+
+/* ===== HANGYEOL SHOP FINAL POLISH ===== */
+
+/* ?? ??? ?? ?? */
+.site03-shop-v2 .card h1,
+.site03-shop-v2 .card h2,
+.site03-shop-v2 .card h3{
+  color:#12213e!important;
+  -webkit-text-fill-color:#12213e!important;
+}
+
+.site03-shop-v2 .note{
+  background:#f7efe5!important;
+  border:1px solid #ead8ca!important;
+  color:#4b5669!important;
+  -webkit-text-fill-color:#4b5669!important;
+}
+
+.site03-shop-v2 .shop-extra-guide-head > *:first-child{
+  background:#fde5df!important;
+  color:#c95449!important;
+  -webkit-text-fill-color:#c95449!important;
+}
+
+.site03-shop-v2 .shop-follow-call,
+.site03-shop-v2 .shop-follow-sms{
+  font-weight:900!important;
+  font-size:15px!important;
+}
+
+
+
+/* ===== SHOP V2 FIX ===== */
+
+/* ?? ???: ??? ?? ? ?? ?? */
+.site03-shop-v2 .card .shop-name,
+.site03-shop-v2 .card h1.shop-name{
+  color:#fff!important;
+  -webkit-text-fill-color:#fff!important;
+}
+
+/* ?? ?? ?? */
+.site03-shop-v2 .shop-follow-contact{
+  z-index:9999!important;
+}
+
+.site03-shop-v2 .shop-follow-call,
+.site03-shop-v2 .shop-follow-sms{
+  font-weight:900!important;
+  font-size:15px!important;
+  line-height:1!important;
+}
+
+
+
+/* SITE03 MASS SHOP FIXED LABELS */
+.site03-shop-v2 .shop-follow-call,
+.site03-shop-v2 .shop-follow-sms{
+  font-size:0!important;
+}
+
+.site03-shop-v2 .shop-follow-call::after{
+  content:"\C804\D654\D558\AE30";
+  font-size:15px!important;
+  font-weight:900!important;
+}
+
+.site03-shop-v2 .shop-follow-sms::after{
+  content:"\BB38\C790\D558\AE30";
+  font-size:15px!important;
+  font-weight:900!important;
+}
